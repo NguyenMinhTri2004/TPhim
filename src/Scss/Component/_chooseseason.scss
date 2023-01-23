@@ -1,0 +1,49 @@
+@import "../mixin";
+@import "../base";
+
+
+.season {
+    margin-top: 10rem;
+
+    &__list {
+        cursor: pointer;
+        padding : 20px;
+
+        &__item {
+            @include flex (center , flex-start);
+            gap: 40px;
+            width: 40%;
+            min-width: 460px;
+            height: 350px;
+            padding: 0 30px;
+            background-color: rgb(112, 103, 103);
+            border-radius: 10px;
+            margin-bottom: 20px;
+            overflow: hidden;
+
+            &__left {
+
+                width: 50%;
+
+                & > img {
+                    width: auto;
+                    height: auto;
+                    object-fit: contain;
+                }
+
+            }
+
+            &__right {
+
+                &__name {
+
+                }
+
+                &__episode {
+
+                }
+
+            }
+        }
+    }
+}

@@ -1,0 +1,68 @@
+@import "../mixin";
+@import "../base";
+
+.video {
+    @include flex (center , center);
+    flex-direction: column;
+    margin-top: 7rem;
+
+    &__section {
+        width: 100%!important;
+    }
+   
+    &__left {
+        width: 95%;
+        height: fit-content;
+        flex-direction: column;
+        margin-bottom: 2rem;
+
+        @include mobile {
+            margin-bottom: 3rem;
+        }
+
+        &__chap {
+            background-color: rgb(50, 48, 48);
+            @include flex (flex-start , flex-start);
+            flex-wrap: wrap;
+        }
+
+        &__item {
+            width: 100%;
+
+            & > button {
+                float: left;
+                margin: 5px;
+                padding: 10px 20px;
+                background: #3a3a3a;
+                color: #fdfdfd;
+                border-radius: 3px;
+                font-size: 13px
+            }
+        }
+
+    }
+
+    &__right {
+
+        flex: 1;
+      
+       
+
+        &__title {
+
+        }
+
+        &__list {
+            overflow-y: scroll;
+            height: 400px;
+
+            &__item {
+
+            }
+
+        }
+
+
+    }
+
+}
